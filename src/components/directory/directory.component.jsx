@@ -20,7 +20,7 @@ constructor(){
               linkUrl: 'shop/jackets'
             },
             {
-              title: 'sneakers',
+              title: 'sneaker',
               imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
               id: 3,
               linkUrl: 'shop/sneakers'
