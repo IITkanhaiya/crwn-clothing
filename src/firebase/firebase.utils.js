@@ -13,7 +13,7 @@ const config ={
       
 };
 firebase.initializeApp(config);
-export const creatUserProfileDocument=async (userAuth,additionalData)=>
+export const createUserProfileDocument=async (userAuth,additionalData)=>
 {
 if(!userAuth)return;
 const userRef=firestore.doc(`user/${userAuth.uid}`);

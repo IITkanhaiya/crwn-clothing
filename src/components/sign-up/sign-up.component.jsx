@@ -2,7 +2,7 @@ import react, { forwardRef } from "react";
 import FormInput from "../form-input/form-input.component";
 import CustomButton from "../custom-button/custom-button.component";
 import './sign-up.style.scss';
-import {auth,creatUserProfileDocument} from '../../firebase/firebase.utils';
+import {auth,createUserProfileDocument} from '../../firebase/firebase.utils';
 
 class SignUp extends react.Component{
     constructor(){
@@ -24,7 +24,7 @@ class SignUp extends react.Component{
         }
         try{
             const {user}=await auth.createUserWithEmailAndPassword(email,password);
-            await creatUserProfileDocument(user,{displayName});
+            await createUserProfileDocument(user,{displayName});
             this.setState({displayName:'',
             email:'',
             password:'',
